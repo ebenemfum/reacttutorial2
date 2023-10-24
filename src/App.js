@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+const Person = (props) =>
+{
+  return(
+    <>
+    <h1>First Name: {props.fname}</h1>
+    <h2>Last Name: {props.lname}</h2>
+    <h3>Age: {props.age}</h3>
+
+    </>
+  )
+}
+
+const App = (
+) => 
+
+{
+
+  
+
+
+  return(
+    <div className='App'>
+      <Person fname={'John'} lname={'Michaels'} />
+
     </div>
   );
-}
+} 
 
 export default App;
